@@ -19,9 +19,8 @@ filename = '`+environment+`'
 dill.dump_session(filename)`)
 	output, err := cmd.CombinedOutput()
 	if err != nil {
-		fmt.Println(err)
+		fmt.Printf(err)
 	}
-	fmt.Println(string(output))
 }
 
 // Destroy deletes the files storing the python environment
