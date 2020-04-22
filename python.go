@@ -27,6 +27,7 @@ dill.dump_session(filename)`)
 // Destroy deletes the files storing the python environment
 func Destroy() error {
 	err := os.RemoveAll(environment)
+	return err
 }
 
 // Run executes the given python code in a persistent state interpreter
