@@ -21,6 +21,7 @@ dill.dump_session(filename)`)
 	if err != nil {
 		fmt.Printf("%v", err)
 	}
+	_ = output
 }
 
 // Destroy deletes the files storing the python environment
