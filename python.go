@@ -19,7 +19,7 @@ filename = '`+environment+`'
 dill.dump_session(filename)`)
 	output, err := cmd.CombinedOutput()
 	if err != nil {
-		fmt.Printf(err)
+		fmt.Printf("%v", err)
 	}
 }
 
